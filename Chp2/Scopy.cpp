@@ -1,8 +1,5 @@
 //
 //  Scopy.cpp
-//  
-//
-//  Created by Kate Zhao on 2018-06-08.
 //
 
 #include <string>
