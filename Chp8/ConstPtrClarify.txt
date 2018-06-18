@@ -1,0 +1,15 @@
+double const* const p1; // Const pointer to const double
+                        //  . you can't have the pointer point to another address
+                        //  . you can't mutate the value through the pointer
+
+double const* p2;       // Non-const pointer to const double
+                        //  . you can have the pointer point to another address
+                        //  . you can't mutate the value through the pointer
+
+double* const p3;       // Const pointer to double
+                        //  . you can't have the pointer point to another address
+                        //  . you can mutate the value through the pointer
+
+double* p4;             // Non-const pointer to non-const double
+                        //  . you can have the pointer point to another address
+                        //  . you can mutate the value through the pointer
