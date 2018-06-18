@@ -13,3 +13,9 @@ double* const p3;       // Const pointer to double
 double* p4;             // Non-const pointer to non-const double
                         //  . you can have the pointer point to another address
                         //  . you can mutate the value through the pointer
+
+// Try reading right to left
+double const *       p; // pointer to const double
+const double *       p; // pointer to const double
+double       * const p; // const pointer to double
+double const * const p; // const pointer to const double
