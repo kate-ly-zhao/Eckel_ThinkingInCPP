@@ -9,7 +9,7 @@ using namespace std;
 
 class foo {
     enum {size = 5};
-    char* array[size];
+    char array[size];
 public:
     foo(char c = ' ') {
         memset(array, c, size);
