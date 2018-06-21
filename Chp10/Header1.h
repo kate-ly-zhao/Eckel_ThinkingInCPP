@@ -6,3 +6,4 @@ namespace MyLib {
  void f();
  // ...
 } 
+#endif // HEADER1_H ///:~ 
