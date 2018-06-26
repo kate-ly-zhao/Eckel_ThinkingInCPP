@@ -8,29 +8,20 @@ class Integer {
 public:
  Integer(long ll = 0) : i(ll) {}
  // No side effects takes const& argument:
- friend const Integer&
- operator+(const Integer& a);
- friend const Integer 
-  operator-(const Integer& a);
- friend const Integer
- operator~(const Integer& a);
- friend Integer*
- operator&(Integer& a);
- friend int
- operator!(const Integer& a);
+ friend const Integer& operator+(const Integer& a);
+ friend const Integer operator-(const Integer& a);
+ friend const Integer operator~(const Integer& a);
+ friend Integer* operator&(Integer& a);
+ friend int operator!(const Integer& a);
  // Side effects have non-const& argument:
  // Prefix:
- friend const Integer&
- operator++(Integer& a);
+ friend const Integer& operator++(Integer& a);
  // Postfix:
- friend const Integer
- operator++(Integer& a, int);
+ friend const Integer operator++(Integer& a, int);
  // Prefix:
- friend const Integer&
- operator--(Integer& a);
+ friend const Integer& operator--(Integer& a);
  // Postfix:
- friend const Integer
- operator--(Integer& a, int);
+ friend const Integer operator--(Integer& a, int);
 };
 
 // Global operators:
